@@ -30,7 +30,10 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libmm-qcamera
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f925736... mido: Add GCam Go [1/2]
 
 # Consumerir
 PRODUCT_PACKAGES += \
@@ -275,4 +278,7 @@ PRODUCT_PACKAGES += \
 # GCam Go
 PRODUCT_PACKAGES += \
     GCam
+<<<<<<< HEAD
+>>>>>>> f925736... mido: Add GCam Go [1/2]
+=======
 >>>>>>> f925736... mido: Add GCam Go [1/2]
