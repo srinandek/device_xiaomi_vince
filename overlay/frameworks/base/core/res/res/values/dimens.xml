@@ -23,4 +23,6 @@
 
     <!-- Rounded display corners-->
     <dimen name="rounded_corner_radius">18dp</dimen>
+    <dimen name="status_bar_height_portrait">94px</dimen>
+
 </resources>
