@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The havocOS Project
+# Copyright (C) 2017 ZENX OS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,24 +17,24 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/havoc/config/phone-xxhdpi-4096-dalvik-heap.mk)
-$(call inherit-product, vendor/havoc/config/phone-xxhdpi-2048-hwui-memory.mk)
+$(call inherit-product, vendor/zenx/config/phone-xxhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, vendor/zenx/config/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common havocOS stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common ZENX OS stuff.
+$(call inherit-product, vendor/zenx/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := havoc_vince
+PRODUCT_NAME := zenx_vince
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
-
+ZENX_BUILD_TYPE := Official
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -44,3 +44,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
 
 TARGET_VENDOR := xiaomi
+ZENX_BUILD_TYPE := Official
